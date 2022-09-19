@@ -1,0 +1,22 @@
+{
+  "name": "node_mysql_courses",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/longpt-4141/node_mysql_courses.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/longpt-4141/node_mysql_courses/issues"
+  },
+  "homepage": "https://github.com/longpt-4141/node_mysql_courses#readme",
+  "dependencies": {
+    "express": "4.17.1"
+  }
+}
