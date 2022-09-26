@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+</head>
+<body class="container">
+
+<header>
+  <%- include('../partials/header'); %>
+</header>
+
+<main>
+<div class="row">
+  <div class="col-sm-8">
+    <div class="jumbotron">
+      <h1>This is great</h1>
+      <p>Welcome to templating using EJS</p>
+    </div>
+  </div>
+
+  <div class="col-sm-4">
+    <div class="well">
+      <h3>Look I'm A Sidebar!</h3>
+    </div>
+  </div>
+</div>
+<table class="table">
+  <thead>
+      <tr>
+          <th scope="col" id="long">No.</th>
+          <th scope="col">Name</th>
+          <th scope="col">Address</th>
+          <th scope="col">Email</th>
+          <th scope="col"colspan="2" >Action</th>
+      </tr>
+  </thead>
+  <tbody>
+      <% users.forEach((user, index) => { %>
+      <tr>
+          <th scope="row"><%= index +1 %></th>
+              <td id=""><%= user.name %></td>
+              <td><%= user.address %></td>
+              <td><%= user.email %></td>
+              <td>
+                  <a class="btn btn-primary" href="/user/<%= user.id %>" role="button">detail</a>
+                  <a class="btn btn-primary" href="/user/<%= user.id %>/edit" role="button">Edit</a>
+                  <a class="btn btn-secondary ms-2"  role="button">Delete</a>
+              </td>
+      </tr>
+      <% }) %>
+  </tbody>
+</table>
+</main>
+
+<footer>
+  <%- include('../partials/footer'); %>
+</footer>
+
+</body>
+</html>

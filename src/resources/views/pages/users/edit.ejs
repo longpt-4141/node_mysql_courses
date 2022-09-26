@@ -1,0 +1,20 @@
+<div class="mt-4">
+    <div class="container">
+        <h3>EDIT NGUOI DUNG</h3>
+    <form method="post" action="/user/<%= user.id %>?_method=PUT">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="ho va ten" value="<%= user.name %>">
+        </div>
+        <div class="form-group">
+            <label for="address">address</label>
+            <input type="text" name="address" id="address" class="form-control" placeholder="address" value="<%= user.address %>">
+        </div>
+        <div class="form-group">
+            <label for="videoId">email</label>
+            <input type="text" name="email" id="email" class="form-control" placeholder="email" value="<%= user.email %>">
+        </div>
+    <button type="submit" class="btn btn-primary">Edit</button>
+    </form>
+    </div>
+</div>
