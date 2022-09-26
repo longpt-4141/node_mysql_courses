@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon --inspect src/server.js",
+    "watch": "node-sass --watch src/resources/scss/ -o src/public/css/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,6 +19,23 @@
   },
   "homepage": "https://github.com/longpt-4141/node_mysql_courses#readme",
   "dependencies": {
-    "express": "4.17.1"
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.6",
+    "express": "4.17.1",
+    "method-override": "^3.0.0",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.20",
+    "sequelize": "^6.11.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/preset-env": "^7.12.10",
+    "lint-staged": "^13.0.3",
+    "morgan": "^1.10.0",
+    "node-sass": "^7.0.3",
+    "prettier": "^2.7.1",
+    "sequelize-cli": "^6.4.1"
   }
 }
